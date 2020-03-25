@@ -5,5 +5,9 @@ dodger.style.left;
 dodger.style.bottom = "0px";
 
 document.addEventListener("keydown", function(e) {
+  if (e.key === "ArrowLeft") {
+    let leftNumbers = dodger.style.left.replace("px", "");
+    let left = parseInt(leftNumbers, 10);
+  }
   console.log(e.key);
 })
